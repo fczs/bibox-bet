@@ -20,7 +20,6 @@ try {
     $elements = $dom->find('div[class=world-country-box]');
 
     foreach ($elements as $key => $el) {
-        if ($key > 0) continue;
         $box = $el->find('div[class=world-box-num]')[0];
         $lines = $box->find('div[class=world-num-box]');
         $countries = $lines[0]->find('div[class=text-center]');
